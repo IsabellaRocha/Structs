@@ -15,3 +15,8 @@ void displayRando(struct player a) {
     a.Number = Numbers[r];
     printf("Player Name: %c\tPlayer Number: %d\n", a.name, a.number);
 }
+
+void modify(struct player a, char[] newName, int newNum) {
+    a.Name = newName;
+    a.Number = newNum;
+}
