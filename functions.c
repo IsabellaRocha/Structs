@@ -10,7 +10,7 @@ void display(struct player a) {
 
 void displayRando(struct player a) {
     srand(time(NULL));
-    int r = rand();
+    int r = rand(4);
     a.Name = Names[r];
     a.Number = Numbers[r];
     printf("Player Name: %c\tPlayer Number: %d\n", a.name, a.number);
