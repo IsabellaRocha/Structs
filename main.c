@@ -6,7 +6,7 @@
 int main() {
     struct player p = rando();
     display(p);
-    modify(&p, "Jonah", 11);
+    modify(&p, "Wagner", 54);
     display(p);
     return 0;
 }
