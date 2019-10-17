@@ -4,7 +4,7 @@
 #include "headers.h"
 
 void display(struct player a) {
-    printf("Player Name: %c\tPlayer Number: %d\n", a.name, a.number);
+    printf("Player Name: %s\tPlayer Number: %d\n", a.name, a.number);
 }
 
 struct player rando() {
