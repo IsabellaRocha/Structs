@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <strings.h>
+#include <string.h>
+#include <time.h>
 #include "headers.h"
 
 void display(struct player a) {
@@ -9,10 +10,11 @@ void display(struct player a) {
 
 struct player rando() {
     struct player a;
+    srand(time(NULL));
     char *Names[] = {"Dingman", "Ryan", "Chris", "Henry"};
     int Numbers[] = {8, 78, 12, 70};
     int r = rand() % 4;
-    a.name = Names[r];
+    strcpy(a.name, Names[r]);
     a.number = Numbers[r];
     return a;
 }
