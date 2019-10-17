@@ -9,3 +9,6 @@ functions.o: functions.c headers.h
 
 run:
 	./program
+
+clean:
+	rm *.o
