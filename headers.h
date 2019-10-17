@@ -1,4 +1,4 @@
-struct player { char *name; int number; };
+struct player { char name[10]; int number; };
 
 void display(struct player a);
 struct player rando();
