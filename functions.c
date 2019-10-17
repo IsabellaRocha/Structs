@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <strings.h>
 #include "headers.h"
 
 void display(struct player a) {
@@ -17,6 +18,6 @@ struct player rando() {
 }
 
 void modify(struct player *a, char *newName, int newNum) {
-    strcpy(a -> name, newName)
+    strcpy(a -> name, newName);
     a -> number = newNum;
 }

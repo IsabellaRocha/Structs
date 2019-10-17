@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <strings.h>
 #include "headers.h"
 
 int main() {
@@ -9,6 +10,6 @@ int main() {
     display(Quarterback);
     struct player p = rando();
     display(p);
-    modify(Quarterback, "Jonah", 11);
+    modify(&Quarterback, "Jonah", 11);
     display(Quarterback);
 }
